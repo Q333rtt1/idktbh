@@ -1,0 +1,4 @@
+name: MyEventListenerPlugin
+version: '${version}'
+main: me.qurti.idktbh.MyEventListenerPlugin
+api-version: '1.20'
