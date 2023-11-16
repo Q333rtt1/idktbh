@@ -1,5 +1,6 @@
 package me.qurti.idktbh
 
+import me.qurti.idktbh.listeners.JoinLeaveListener
 import me.qurti.idktbh.listeners.ShearSheepListener
 import me.qurti.idktbh.listeners.XPBottleBreakListener
 import org.bukkit.event.EventHandler
@@ -14,10 +15,11 @@ class Main : JavaPlugin(), Listener {
     }
 
     override fun onEnable() {
-        println("Hi")
+        println("Plugin is enabled yippii")
         server.pluginManager.registerEvents(this, this)
         server.pluginManager.registerEvents(ShearSheepListener(), this)
         server.pluginManager.registerEvents(XPBottleBreakListener(), this)
+        server.pluginManager.registerEvents(JoinLeaveListener(), this)
     }
 
     @EventHandler
